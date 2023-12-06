@@ -1,7 +1,7 @@
 const express = require('express');
 const ParseServer = require('parse-server').ParseServer;
 
-const app = express();
+const index = express();
 const api = new ParseServer({
    databaseURI: 'postgresql://postgres:pass@localhost/postgres', // Mettez à jour avec vos infos
    appId: 'monAppId',
@@ -11,10 +11,13 @@ const api = new ParseServer({
 
 api.start().then(() => {
   console.log('Parse Server is running...');
-   app.use('/parse', api.app);
+  index.get('/', function(req, res) {
+      res.status(200).send('Express is running here.');
+   });
+   index.use('/parse', api.app);
 
    const port = 1337;
-   app.listen(port, function() {
+   index.listen(port, function() {
       console.log('parse-server-example running on port ' + port + '.');
    });
 });

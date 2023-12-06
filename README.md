@@ -28,3 +28,15 @@ Vous pouvez maintenant lancer votre serveur Express et Parse en exécutant la co
 ```bash
 npm start
 ```
+## Parse Dashboard
+Pour installer le Parse Dashboard, ouvrez un nouveau terminal et exécutez la commande suivante :
+
+```bash
+npm install parse-dashboard
+```
+Pour lancer le Parse Dashboard, exécutez la commande suivante :
+
+```bash
+npm run parseDashboard
+```
+
