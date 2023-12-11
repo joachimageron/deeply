@@ -1,7 +1,7 @@
 {
   "name": "express",
   "version": "1.0.0",
-  "description": "",
+  "description": "Avant de commencer, assurez-vous d'avoir installé Node.js et npm sur votre machine. Vous pouvez vérifier si vous les avez déjà installés en ouvrant un terminal et en exécutant les commandes suivantes :",
   "main": "index.js",
   "dependencies": {
     "abort-controller": "^3.0.0",
@@ -369,7 +369,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "node index.js",
+    "start": "node index.js",
     "parseDashboard": "parse-dashboard --config parse-dashboard-config.json"
   },
   "keywords": [],

@@ -19,6 +19,9 @@ Pour initialiser votre projet, ouvrez un terminal à les racine de votre projet 
 npm init -y
 ```
 ```bash
+npm install
+```
+```bash
 npm install parse-server express
 ```
 
